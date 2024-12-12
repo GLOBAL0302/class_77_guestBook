@@ -22,6 +22,7 @@ const CommentForm = () => {
     e.preventDefault();
     await dispatch(postCommentThunk(commentForm));
     await dispatch(fetchAllCommentsThunk());
+    setCommentForm(initialState);
   };
 
   const onChangeInput = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -47,7 +48,6 @@ const CommentForm = () => {
     <>
       <Grid2 container gap={2} flexDirection="column" component="form" onSubmit={onSubmitForm}>
         <TextField
-          required
           label="Author"
           onChange={onChangeInput}
           id="author"
