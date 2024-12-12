@@ -12,7 +12,7 @@ const fs = require("fs");
 
 app.use(express.json());
 app.use(cors());
-
+app.use(express.static('public'));
 app.use("/comment", commentRouter);
 
 

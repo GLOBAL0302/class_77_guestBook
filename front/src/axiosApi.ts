@@ -1,6 +1,6 @@
 import axios from 'axios';
-import {apiUrl} from './globalConstants.ts';
+import { apiUrl } from './globalConstants.ts';
 
-export const  axiosApi = axios.create({
-  baseURL:apiUrl
+export const axiosApi = axios.create({
+  baseURL: apiUrl,
 });
