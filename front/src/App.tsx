@@ -1,11 +1,13 @@
 import './App'
+import CommentForm from './components/CommentForm/CommentForm.tsx';
+import { Container } from '@mui/material';
 
 const App = () => {
 
   return (
-    <>
-sd
-    </>
+    <Container>
+      <CommentForm/>
+    </Container>
   )
 };
 
